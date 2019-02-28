@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8" />
+	  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+	  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />  
+	  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+	  <!--     Fonts and icons     -->
+	  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+	  <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css" />
+	  
+	  <!-- <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" /> -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">	  
+	  <!-- CSS Files -->
+	  <link href="./assets/css/material-kit.css?v=2.0.3" rel="stylesheet" />
+	  <!-- CSS Just for demo purpose, don't include it in your project -->
+	  
+	  <link rel="stylesheet" type="text/css" href="./assets/css/policyinline.css" />
+	  <link rel="stylesheet" type="text/css" href="./assets/css/demo.css" />
+	  <link rel="stylesheet" type="text/css" href="./assets/css/set1.css" />
+	  
+	  <link rel="stylesheet" type="text/css" href="./assets/css/component.css" />
+	  <link rel="stylesheet" type="text/css" href="./assets/css/animations.css" />
+	  <link rel="stylesheet" type="text/css" href="./assets/css/animate.css" />
+	  <!-- intergrating style.css for toggle button (car/bike) -->
+	  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+
+
+	<title>Bike insurance</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js" type="text/javascript"></script>
+</head>
+<style type="text/css">
+	body{
+		background-color: #fff;
+	}
+	#icon-1{
+		width: 39%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 15px 0;
+
+	}
+	#icon-2{
+		    width: 39%;
+		    display: block;
+		    margin-left: auto;
+		    margin-right: auto;
+		    padding: 15px 0;
+		}
+	.nav-pills .nav-item .nav-link.active {
+	    color: #4f8afc;
+	    background-color: #f8f9fa;
+	    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px #999999;
+	}
+	.healthcare-bg{
+		
+			background-size: cover;
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    width: 60%;
+		    height: 100%;
+		    margin-top: -488px;
+		    margin-left: 40%;
+	}
+	/*input box custom*/
+	.modified{		
+		border:0.5px solid #b1b1b1;
+		padding-left: 15px;
+		border-radius: 2.0em;
+		height: 55px;
+		margin-right: -135px;
+	}
+	/*changed material-kit.css at 3612 for border-top-right/left-radius*/
+	/*custom button*/
+	.styling{
+		border-radius: 2.0em;		
+		color: #fff;
+		border: none;
+	}
+	/*override border anim */
+	.form-control, .is-focused .form-control{
+		background-image: none;
+	}
+	
+	/*navbar padding fixes*/
+	.navbar{
+		padding:10px 100px 10px 100px;
+	}
+
+	.form-control:focus,
+	.bmd-form-group.is-focused .form-control {
+	  box-shadow: 0px 0px 20px 1px #d2d2d2;
+	}
+	.nav-link :active{
+		color:#4F8AFC;
+ 
+	}
+	.toggle input + label {
+		padding:.5rem  3rem;
+	}
+	.toggle{
+		margin-top:30px;
+	}
+	.section{
+		width: 100%;
+		height: 100vh;
+	}
+
+</style>
+<body > 
+	<div id="main" class="m-scene">	
+		<!-- navbar starts -->
+	    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	    	
+	      <a class="navbar-brand" href="#"><img src="./assets/images/logo.jpg" style="width:72%"></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="navbar-toggler-icon"></span>
+	        <span class="navbar-toggler-icon"></span>
+	        <span class="navbar-toggler-icon"></span>
+	        <span class="navbar-toggler-icon"></span>
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	        <ul class="navbar-nav mr-auto" style="margin-left:25px;">
+	          <li class="nav-item dropdown">
+	            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	              vehicle
+	            </a>
+	            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	              <a class="dropdown-item dl-trigger" href="carinsuranceheader.html">CAR</a>
+	              <a class="dropdown-item" href="#">BIKE</a>
+	              <!-- <div class="dropdown-divider"></div>
+	              <a class="dropdown-item" href="#">Something else here</a>
+	            </div> -->
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="#">health</a>
+	          </li>
+	          <li class="nav-item active">
+	            <a class="nav-link" href="#">term <span class="sr-only">(current)</span></a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">life</a>
+	          </li>
+
+	        </ul>
+	       
+	          
+	          <ul class="form-inline my-2 my-lg-0">
+	          	<li class="nav-item">
+	          	  <a href="#" class="btn btn-rose btn-raised btn-round " data-toggle="dropdown">
+	          	    login
+	          	  </a>
+	          	</li>
+	          	<li class="nav-item" style="margin-left:15px">
+	          	  <a href="#pablo" class="btn btn-round btn-blue" style="background:#E5EEFE;color:#4F8AFC;">
+	          	  	1800 155 122 100         
+	          	  </a>
+	          	</li>
+	          </ul>
+	        
+	      </div>
+	    </nav>  
+	    <!-- nav ends -->
+	    <div class="section ">
+	        <div class="container " style="text-align: left">
+	        	<div class="col-md-6">
+	        		<div class="toggle">
+	        			<input type="radio" name="sizeBy" value="weight" id="sizeWeight" onclick="redirect()"/>
+	        			<label class="pointer_hover" for="sizeWeight">Car</label>
+	        			<script>
+	        			function redirect() {
+	        			  location.href = "carinsurancequotes.html";
+	        			}
+	        			</script>
+	        			<input  type="radio" name="sizeBy" value="dimensions" id="sizeDimensions" checked="checked"/>
+	        			<label class="pointer_hover" for="sizeDimensions">Bike</label> 
+	        		</div>
+	        		<!-- keep toogle rest fade -->
+	        		<div class="scene-element scene-element--fadeIn"> 
+	        		<h2 style="text-align: left;">Just a minute away from <br><b>getting your Bike insurance.</b></h2>
+	        		
+	        		<div style="margin-top: 40px;">
+	        			
+	        		  <div class="input-group mb-3 ">
+	        		    <input  type="text" class="form-control modified" placeholder="Enter your car number" aria-label="Recipient's username" aria-describedby="basic-addon2">
+	        		    <div class="input-group-append">
+	        		      <button class="btn btn-outline-secondary styling" type="button" style="background-color: #4F8AFC;color:#fff;border:none;box-shadow: 0px 0px 20px 1px #d2d2d2;">Get quotes</button>
+	        		    </div>
+	        		  </div>
+	        		</div>
+	        		<div style="display:inline-flex;color:#b1b1b1;margin-top:30px;">
+	        			<img src="./assets/images/logos/irda-logo.svg">
+	        			<p style="text-align: left">IRDA Direct Broker Code: IRDA/55 <br>CIN: 2589566544533</p>
+	        		</div>
+	        	</div>			
+	        </div>
+	    </div>
+	    	<div class="scene-element scene-element--fadeIn">
+	    		<img class="healthcare-bg" src="./assets/images/main-header/bikeins.svg">
+	     	</div>
+	</div>
+</div>
+	<div class="section">
+		
+	</div>
+	        
+	 
+	
+
+	
+
+	<script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+	<script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+	<script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>	
+	<script src="./assets/js/plugins/moment.min.js"></script>
+	<!--  Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+	<script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+	<script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+	<!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+	<script src="./assets/js/material-kit.js?v=2.0.3" type="text/javascript"></script>
+	<script src="./assets/js/material-dashboard.js"></script>
+	<script src="./assets/js/jquery.dlmenu.js"></script>
+	<script src="./assets/js/pagetransitions.js"></script>
+	
+
+	 
+	
+</body>
+</html>
